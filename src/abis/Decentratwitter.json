@@ -1,0 +1,638 @@
+{
+  "contractName": "Decentratwitter",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "postCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "posts",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "hash",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "profiles",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"postCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"posts\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"hash\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"profiles\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/Decentratwitter.sol\":\"Decentratwitter\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/Decentratwitter.sol\":{\"keccak256\":\"0x312b1ef28cbfc0b04b9f36fac5a7bd93c7d912739133668e2a5e81f13f364797\",\"urls\":[\"bzz-raw://39cd05203b0939609389f21b281194691041fba5f266232cb17f9aa58f068c50\",\"dweb:/ipfs/Qmf2iYHDfYs6CVazitt1pWaLepX4dvwqz9ivDGK1VXivwP\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103ea806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80630b1e7f831461005157806317906c2e146100825780639f181b5e146100a0578063bbe15627146100be575b600080fd5b61006b60048036036100669190810190610221565b6100ee565b6040516100799291906102ad565b60405180910390f35b61008a6101aa565b6040516100979190610292565b60405180910390f35b6100a86101b0565b6040516100b59190610292565b60405180910390f35b6100d860048036036100d391908101906101f8565b6101b6565b6040516100e59190610292565b60405180910390f35b6002602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101a05780601f10610175576101008083540402835291602001916101a0565b820191906000526020600020905b81548152906001019060200180831161018357829003601f168201915b5050505050905082565b60015481565b60005481565b60036020528060005260406000206000915090505481565b6000813590506101dd81610379565b92915050565b6000813590506101f281610390565b92915050565b60006020828403121561020a57600080fd5b6000610218848285016101ce565b91505092915050565b60006020828403121561023357600080fd5b6000610241848285016101e3565b91505092915050565b6000610255826102dd565b61025f81856102e8565b935061026f818560208601610335565b61027881610368565b840191505092915050565b61028c8161032b565b82525050565b60006020820190506102a76000830184610283565b92915050565b60006040820190506102c26000830185610283565b81810360208301526102d4818461024a565b90509392505050565b600081519050919050565b600082825260208201905092915050565b60006103048261030b565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60005b83811015610353578082015181840152602081019050610338565b83811115610362576000848401525b50505050565b6000601f19601f8301169050919050565b610382816102f9565b811461038d57600080fd5b50565b6103998161032b565b81146103a457600080fd5b5056fea365627a7a72315820a8dc099dcf1fd86491953a88c327a006e8d1c2a0de453af922b1090cd570766d6c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80630b1e7f831461005157806317906c2e146100825780639f181b5e146100a0578063bbe15627146100be575b600080fd5b61006b60048036036100669190810190610221565b6100ee565b6040516100799291906102ad565b60405180910390f35b61008a6101aa565b6040516100979190610292565b60405180910390f35b6100a86101b0565b6040516100b59190610292565b60405180910390f35b6100d860048036036100d391908101906101f8565b6101b6565b6040516100e59190610292565b60405180910390f35b6002602052806000526040600020600091509050806000015490806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101a05780601f10610175576101008083540402835291602001916101a0565b820191906000526020600020905b81548152906001019060200180831161018357829003601f168201915b5050505050905082565b60015481565b60005481565b60036020528060005260406000206000915090505481565b6000813590506101dd81610379565b92915050565b6000813590506101f281610390565b92915050565b60006020828403121561020a57600080fd5b6000610218848285016101ce565b91505092915050565b60006020828403121561023357600080fd5b6000610241848285016101e3565b91505092915050565b6000610255826102dd565b61025f81856102e8565b935061026f818560208601610335565b61027881610368565b840191505092915050565b61028c8161032b565b82525050565b60006020820190506102a76000830184610283565b92915050565b60006040820190506102c26000830185610283565b81810360208301526102d4818461024a565b90509392505050565b600081519050919050565b600082825260208201905092915050565b60006103048261030b565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60005b83811015610353578082015181840152602081019050610338565b83811115610362576000848401525b50505050565b6000601f19601f8301169050919050565b610382816102f9565b811461038d57600080fd5b50565b6103998161032b565b81146103a457600080fd5b5056fea365627a7a72315820a8dc099dcf1fd86491953a88c327a006e8d1c2a0de453af922b1090cd570766d6c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "92:273:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:273:0;;;;;;;",
+  "deployedSourceMap": "92:273:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;92:273:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:37;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;154:24;;;:::i;:::-;;;;;;;;;;;;;;;;123:25;;;:::i;:::-;;;;;;;;;;;;;;;;253:43;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;184:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;154:24::-;;;;:::o;123:25::-;;;;:::o;253:43::-;;;;;;;;;;;;;;;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:130;;222:6;209:20;200:29;;234:33;261:5;234:33;;;194:78;;;;;279:241;;383:2;371:9;362:7;358:23;354:32;351:2;;;399:1;396;389:12;351:2;434:1;451:53;496:7;487:6;476:9;472:22;451:53;;;441:63;;413:97;345:175;;;;;527:241;;631:2;619:9;610:7;606:23;602:32;599:2;;;647:1;644;637:12;599:2;682:1;699:53;744:7;735:6;724:9;720:22;699:53;;;689:63;;661:97;593:175;;;;;775:339;;883:35;912:5;883:35;;;930:71;994:6;989:3;930:71;;;923:78;;1006:52;1051:6;1046:3;1039:4;1032:5;1028:16;1006:52;;;1079:29;1101:6;1079:29;;;1074:3;1070:39;1063:46;;863:251;;;;;;1121:113;1204:24;1222:5;1204:24;;;1199:3;1192:37;1186:48;;;1241:213;;1359:2;1348:9;1344:18;1336:26;;1373:71;1441:1;1430:9;1426:17;1417:6;1373:71;;;1330:124;;;;;1461:404;;1623:2;1612:9;1608:18;1600:26;;1637:71;1705:1;1694:9;1690:17;1681:6;1637:71;;;1756:9;1750:4;1746:20;1741:2;1730:9;1726:18;1719:48;1781:74;1850:4;1841:6;1781:74;;;1773:82;;1594:271;;;;;;1872:118;;1962:5;1956:12;1946:22;;1927:63;;;;1998:163;;2113:6;2108:3;2101:19;2150:4;2145:3;2141:14;2126:29;;2094:67;;;;;2169:91;;2231:24;2249:5;2231:24;;;2220:35;;2214:46;;;;2267:121;;2340:42;2333:5;2329:54;2318:65;;2312:76;;;;2395:72;;2457:5;2446:16;;2440:27;;;;2475:268;2540:1;2547:101;2561:6;2558:1;2555:13;2547:101;;;2637:1;2632:3;2628:11;2622:18;2618:1;2613:3;2609:11;2602:39;2583:2;2580:1;2576:10;2571:15;;2547:101;;;2663:6;2660:1;2657:13;2654:2;;;2728:1;2719:6;2714:3;2710:16;2703:27;2654:2;2524:219;;;;;2751:97;;2839:2;2835:7;2830:2;2823:5;2819:14;2815:28;2805:38;;2799:49;;;;2856:117;2925:24;2943:5;2925:24;;;2918:5;2915:35;2905:2;;2964:1;2961;2954:12;2905:2;2899:74;;2980:117;3049:24;3067:5;3049:24;;;3042:5;3039:35;3029:2;;3088:1;3085;3078:12;3029:2;3023:74;",
+  "source": "//SPDX-License-Identifier: MIT\npragma experimental ABIEncoderV2;\npragma solidity >=0.4.21;\n\ncontract Decentratwitter {\n    uint256 public tokenCount;\n    uint256 public postCount;\n    mapping(uint256 => Post) public posts;\n    // address --> nft id\n    mapping(address => uint256) public profiles;\n\n    struct Post {\n        uint256 id;\n        string hash;\n    }\n}\n",
+  "sourcePath": "E:\\Temp_Pojects_n_Codes\\DecentraTwitter\\src\\contracts\\Decentratwitter.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/Decentratwitter.sol",
+    "exportedSymbols": {
+      "Decentratwitter": [
+        20
+      ]
+    },
+    "id": 21,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:33:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "65:25:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 20,
+        "linearizedBaseContracts": [
+          20
+        ],
+        "name": "Decentratwitter",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4,
+            "name": "tokenCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 20,
+            "src": "123:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "123:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "postCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 20,
+            "src": "154:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "154:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "posts",
+            "nodeType": "VariableDeclaration",
+            "scope": 20,
+            "src": "184:37:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Post_$19_storage_$",
+              "typeString": "mapping(uint256 => struct Decentratwitter.Post)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "192:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "184:24:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Post_$19_storage_$",
+                "typeString": "mapping(uint256 => struct Decentratwitter.Post)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 8,
+                "name": "Post",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 19,
+                "src": "203:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Post_$19_storage_ptr",
+                  "typeString": "struct Decentratwitter.Post"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "profiles",
+            "nodeType": "VariableDeclaration",
+            "scope": 20,
+            "src": "253:43:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 13,
+              "keyType": {
+                "id": 11,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "261:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "253:27:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 12,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "272:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Decentratwitter.Post",
+            "id": 19,
+            "members": [
+              {
+                "constant": false,
+                "id": 16,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 19,
+                "src": "325:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "325:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18,
+                "name": "hash",
+                "nodeType": "VariableDeclaration",
+                "scope": 19,
+                "src": "345:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 17,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "345:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Post",
+            "nodeType": "StructDefinition",
+            "scope": 20,
+            "src": "303:60:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 21,
+        "src": "92:273:0"
+      }
+    ],
+    "src": "31:335:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/Decentratwitter.sol",
+      "exportedSymbols": {
+        "Decentratwitter": [
+          20
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "31:33:0"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".21"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "65:25:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            20
+          ],
+          "name": "Decentratwitter",
+          "scope": 21
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "tokenCount",
+              "scope": 20,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 3,
+                "name": "ElementaryTypeName",
+                "src": "123:7:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "123:25:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "postCount",
+              "scope": 20,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "154:7:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "154:24:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "posts",
+              "scope": 20,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct Decentratwitter.Post)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct Decentratwitter.Post)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "192:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Post",
+                      "referencedDeclaration": 19,
+                      "type": "struct Decentratwitter.Post"
+                    },
+                    "id": 8,
+                    "name": "UserDefinedTypeName",
+                    "src": "203:4:0"
+                  }
+                ],
+                "id": 9,
+                "name": "Mapping",
+                "src": "184:24:0"
+              }
+            ],
+            "id": 10,
+            "name": "VariableDeclaration",
+            "src": "184:37:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "profiles",
+              "scope": 20,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => uint256)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "261:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 12,
+                    "name": "ElementaryTypeName",
+                    "src": "272:7:0"
+                  }
+                ],
+                "id": 13,
+                "name": "Mapping",
+                "src": "253:27:0"
+              }
+            ],
+            "id": 14,
+            "name": "VariableDeclaration",
+            "src": "253:43:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Decentratwitter.Post",
+              "name": "Post",
+              "scope": 20,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 19,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 15,
+                    "name": "ElementaryTypeName",
+                    "src": "325:7:0"
+                  }
+                ],
+                "id": 16,
+                "name": "VariableDeclaration",
+                "src": "325:10:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "hash",
+                  "scope": 19,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 17,
+                    "name": "ElementaryTypeName",
+                    "src": "345:6:0"
+                  }
+                ],
+                "id": 18,
+                "name": "VariableDeclaration",
+                "src": "345:11:0"
+              }
+            ],
+            "id": 19,
+            "name": "StructDefinition",
+            "src": "303:60:0"
+          }
+        ],
+        "id": 20,
+        "name": "ContractDefinition",
+        "src": "92:273:0"
+      }
+    ],
+    "id": 21,
+    "name": "SourceUnit",
+    "src": "31:335:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xeb56487b5734ADa66ab3a19D3d92C3D9fCaC98Ab",
+      "transactionHash": "0xdd52799577c21a1ed2e8175246e2f37bb715492e5932e670b6441406ad0d650f"
+    }
+  },
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-01-21T09:29:08.926Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
