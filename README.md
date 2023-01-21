@@ -1,5 +1,7 @@
 # Decentratwitter
 
+A Twitter-like applicationto express your thoughts but on the decentralized network with some added features....
+
 ## Technology Stack & Tools
 
 - Solidity (Writing Smart Contract)
